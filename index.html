@@ -11,52 +11,57 @@
   </head>
 
   <body>
+    <span class="sr-only">저의 개인 정보를 소개하는 페이지입니다.</span>
+
     <header class="navbar">
-    <span class="sr-only">이 페이지는 저에 대한 인적정보를 소개합니다.</span>
       <h1 class="navbar__logo">
-        <img src="../frontend-introduce-css/src/assets/images/img_logo.png" alt="멋쟁이사자 공식 로고">
+         <img src="../frontend-introduce-css/src/assets/images/img_logo.png" alt="멋쟁이사자 공식 로고">
       </h1>
 
-      <nav>
-        <span class="sr-only">메인 메뉴에는 홈,취미,목표 항목이 포함되어 있습니다.</span>
+      <nav aria-label="메뉴">
         <ul class="navbar__menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="src\pages\hobby.html">Hobby</a></li>
-          <li><a href="src\pages\goals.html">Goals</a></li>
+            <li><a href="index.html"  aria-label="홈 페이지로 이동">Home</a></li>
+            <li><a href="src\pages\hobby.html" aria-label="취미 페이지로 이동">Hobby</a></li>
+            <li><a href="src\pages\goals.html" aria-label="목표 페이지로 이동">Goals</a></li>       
         </ul>
       </nav>
     </header>
 
+
     <main class="aboutme">
       <section class="aboutme__image">
-        <img src="src\assets\images\auboutme_profile.jpg" alt="우다연 프로필 사진">
+        <h2 class="sr-only">프로필 이미지</h2>
+          <img src="src\assets\images\aboutme.me.jpg" alt="저를 소개하는 우다연의 프로필 사진입니다.">
       </section>
 
-      <section>
-        <span class="sr-only">저는 컴퓨터융합학부생 2학년 우다연이라고 합니다.
-        이메일은 dy_woo0409@.네이버이며, 인스타그램 id는 wdy_0409입니다.</span>
-        <ul class="aboutme__list">
-         <li><span class="aboutme__name-label">name: </span>우다연</li>
-          <li><span class="aboutme__major-label"></span>(컴퓨터융합학부 2학년)</li>
-          <li><span class="aboutme__age-label">age: </span>22</li>
-          <li><span class="aboutme__mbti-label">mbti: </span>mbti 불신자</li>
-          <li><span class="aboutme__email-label">email: </span>dy_woo0409@naver.com</li>
-        </ul>
+      <section class="aboutme__info">
+        <h2 class="sr-only">개인정보</h2>
+        <dl class="aboutme__info--text">
+          <dt>name:</dt>
+          <dd>우다연</dd>
+          <br>
+          <dt>major:</dt>
+          <dd>(컴퓨터융합학부 2학년)</dd>
+          <br>
+          <dt>age:</dt>
+          <dd>22</dd>
+          <br>
+          <dt>email:</dt>
+          <dd>dy_woo0409@naver.com</dd>
+        </dl>
 
-        <ul class="aboutme__icons-list">
-          <li><a href="https://www.instagram.com/0409__wdy_?igsh=MTRjc2FxeHExd2N1Zw%3D%3D&utm_source=qr" >
-           <i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href="https://m.blog.naver.com/dy_woo__0_0" >
-            <img src="src\assets\images\naver_blog.svg"></a></li>
+        <h2 class="sr-only">소셜 미디어 링크</h2>
+        <ul class="aboutme__info--icon">
+            <li><a href="https://www.instagram.com/0409__wdy_?igsh=MTRjc2FxeHExd2N1Zw%3D%3D&utm_source=qr" aria-label="우다연의 인스타그램 0409__wdy 계정으로 이동" >
+              <i class="fa-brands fa-instagram"  aria-hidden="true"></i></a></li>
+            <li><a href="https://m.blog.naver.com/dy_woo__0_0"  aria-label="우다연의 네이버 블로그 dy_woo__0_0 이동" >
+              <img src="src\assets\images\naver_blog.svg"  alt="네이버 블로그 바로가기 아이콘" aria-hidden="true"></a></li>
         </ul>
-      </section>
-
+      </section> 
     </main>
 
-    <span class="sr-only">"안녕하세요, 프론트엔드 트랙 23학번 우다연입니다."</span>
-    <h4 class="intro">"안녕하세요, 프론트엔드 트랙 23학번 우다연입니다."</h4>
+    <span class="sr-only">안녕하세요, 프론트엔드 트랙 우다연입니다. 잘부탁드립니다.</span>
+    <p class="intro" >안녕하세요, 프론트엔드 트랙 우다연입니다. 잘부탁드립니다.</p>
 
-    
-    
   </body>
 </html>
