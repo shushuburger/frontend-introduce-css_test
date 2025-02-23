@@ -93,13 +93,13 @@ main{
 .aboutme__info{
     gap:20px;
 }
-.aboutme__info--icon{
+.aboutme__icons{
     display: flex;
     margin-top: 10px;
     gap:20px;
 }
 
-.aboutme__info--icon img, i{ 
+.aboutme__icons img, i{ 
     width: 30px;
     height: 30px;
     font-size: 28px;
@@ -108,22 +108,22 @@ main{
     border-radius: 100%;
 }
 
-.aboutme__info--icon img:hover, i:hover{
+.aboutme__icons img:hover, i:hover{
     background-color:var(--gray-light-color);
 }
 
-.aboutme__info--icon i{
+.aboutme__icons i{
     padding-left:3px;
     padding-top:1.5px;
 }
 
-.aboutme__info--text dt,dd{
+.aboutme__text dt,dd{
     display: inline;
     letter-spacing: 4px;/*글자 간격*/
     line-height: 40px; /*행간 간격*/
 }
 
-.aboutme__info--text dt{
+.aboutme__text dt{
     font-weight: 600;
     font-size: var(--font-medium);
     width: 90px;  
@@ -131,7 +131,7 @@ main{
     text-align: left;
 }
 
-.aboutme__info--text dd{
+.aboutme__text dd{
     font-size: var(--font-medium);
 }
 
