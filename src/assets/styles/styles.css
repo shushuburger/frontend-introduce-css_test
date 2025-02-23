@@ -8,10 +8,10 @@
     --yello-light-color:moccasin;
     --pink-light-color: lightcoral;
     
-    --font-large: 35px;
-    --font-medium: 25px;
-    --font-small: 20px;
-    --font-micro: 10px;
+    --font-large: 25px;
+    --font-medium: 20px;
+    --font-small: 15px;
+    --font-micro: 8px;
     --font-big:55px;
 }
 
@@ -21,7 +21,7 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
-    font-family: "Dongle", serif;
+    font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-style: normal;
 }
